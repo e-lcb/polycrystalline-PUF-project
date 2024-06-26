@@ -19,3 +19,5 @@ contact_plots.py used to plot the 2D array model results, there are different pl
 effective_mobility.py lots of different versions commented out
 
 voltage_split_plot.py uses csv files from energy_band_plot.py
+
+Netlists/.raw files in Report things 1 (Constant length/doping), Report things 2 (Random length/doping/inputs), Report things 4 (Different temperatures)
