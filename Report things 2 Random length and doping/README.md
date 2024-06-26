@@ -2,10 +2,10 @@ LUTs not uploaded as there were too many.
 	
 Changing distribution:
 In Report things 2 Random length and doping
-	- Si 15x15 ND 1e16 L 15um T 300K NT 4e11 Point Contacts
-		○ exp_length_dist_Si 15x15 ND 1e16 L 15um T 300K NT 4e11 Point Contacts
-		○ poisson_doping_dist_Si 15x15 ND 1e16 L 15um T 300K NT 4e11 Point Contacts
-		○ "C:\\Users\\elc20\\OneDrive\\Documents\\University\\Year 4\\Project\\2D Model\\Report things 2 Random length and doping\\Si 15x15 ND 1e16 L 15um T 300K NT 4e11 Point Contacts.raw"
+- Si 15x15 ND 1e16 L 15um T 300K NT 4e11 Point Contacts
+	○ exp_length_dist_Si 15x15 ND 1e16 L 15um T 300K NT 4e11 Point Contacts
+	○ poisson_doping_dist_Si 15x15 ND 1e16 L 15um T 300K NT 4e11 Point Contacts
+	○ "C:\\Users\\elc20\\OneDrive\\Documents\\University\\Year 4\\Project\\2D Model\\Report things 2 Random length and doping\\Si 15x15 ND 1e16 L 15um T 300K NT 4e11 Point Contacts.raw"
 		
 - Si 15x15 ND 1e16 L 15um T 300K NT 4e11 Point Contacts 2
 	○ exp_length_dist_Si 15x15 ND 1e16 L 15um T 300K NT 4e11 Point Contacts 2
