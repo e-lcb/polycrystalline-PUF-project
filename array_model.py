@@ -16,7 +16,7 @@ params = {"ND": 1e16, #provide number if doping type is constant, 1D array if al
           "Previous doping distribution":None, #None or provide address to file from this directory (like length one below)
           "NT": 4e11, #default 5e11
 
-          "Contact type": "point", #point or electrode
+          "Contact type": "point", #point or electrode (if point, Input locations, Voltage inputs and Ground locations are IGNORED)
           "Input locations": {"left":([14],["V1"]), "top":None, "right":None, "bottom":None},
           "Voltage inputs" : {"V1":0.5,"V2":0.5,"V3":0, "V4":0, "V5":0},
           "Ground locations":{"left":0, "top":0, "right":[0], "bottom":None}, 
@@ -24,12 +24,13 @@ params = {"ND": 1e16, #provide number if doping type is constant, 1D array if al
           # NOTE: FORMAT ([voltage input locations], (corresponding voltage names)) for input; [ground locations] for output; can also use "edge" for inputs/outputs
           # "Input locations": {"left":([0, range(1,4)], ("V1", "V2")), "top":None, "right":None, "bottom":None},
           # "Ground locations":{"left":0, "top":0, "right":[range(1,4)], "bottom":None},
-          "VA LUT": (-1.3, 1.3), #Voltage range used to generate LUT (only one boundary)
+          # Inputs only implemented for left, outputs only implemented for right
+          "VA LUT": (-1.3, 1.3), #Voltage range used to generate LUT (only one boundary), should slightly exceed the voltage limit if possible (must not be under unless the GB voltage won't exceed that)
           "VA": (-5, 15), #Voltage range used in simulation
 
           "Grain size distribution": "exponential", #options: constant, exponential
           "Thickness": 1.8e-7, #180 nm
-          "Length": 1.5e-3, #for constant: provide length; for exponential: provide mean length, NOTE the cutoff is set to 60um
+          "Length": 1.5e-3, #for constant: provide length; for exponential: provide mean length, NOTE vary cutoff below
           "Lower grain size limit": 0.5e-4,
           "Upper grain size limit": 100e-4,
           "Rows of grains (n)": 5,
@@ -41,7 +42,7 @@ params = {"ND": 1e16, #provide number if doping type is constant, 1D array if al
           "Previous Length distribution":None, #None if no previous table, or provide its address from this directory, MAKE SURE L dimensions match desired dimensions
             #eg. "Variable length tests\\length_dist_Test_5x5_constant_doping_exp_length_1.5e-3.txt"
 
-          "Electron mobility": 8000, #This is ignored when choosing Silicon 
+          "Electron mobility": 8000, #This is ignored when choosing Silicon, NOTE: model doesn't take into account temperature dependance of mobility
           "Material": "Si", #"Si" for silicon, otherwise provide electron mobility for other materials
           "er":11.7,
           "Temperature":300,
