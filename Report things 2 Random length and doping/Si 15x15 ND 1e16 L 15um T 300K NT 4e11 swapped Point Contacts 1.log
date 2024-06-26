@@ -1,0 +1,25 @@
+Circuit: * LUT_filenum = Test5, previous doping distibution = Report things 2 Random length and doping\poisson_doping_dist_Si 15x15 ND 1e16 L 15um T 300K NT 4e11 Point Contacts.txt, previous length distribution = Report things 2 Random length and doping\exp_length_dist_Si 15x15 ND 1e16 L 15um T 300K NT 4e11 Point Contacts.txt
+
+WARNING: Less than two connections to node NV2.  This node is used by V2.
+WARNING: Less than two connections to node NV3.  This node is used by V3.
+WARNING: Less than two connections to node NV4.  This node is used by V4.
+WARNING: Less than two connections to node NV5.  This node is used by V5.
+
+Date: Thu Apr 18 16:04:55 2024
+Total elapsed time: 6.664 seconds.
+
+tnom = 27
+temp = 27
+method = trap
+totiter = 462
+traniter = 0
+tranpoints = 0
+accept = 0
+rejected = 0
+matrix size = 653
+fillins = 3234
+solver = Normal
+Thread vector: 5056.5/2351.1[8] 0.0/0.0[0] 142.5/52.1[8] 20.5/16.5[4]  2592/500
+Matrix Compiler1: off  [175.3]/232.6/210.0
+Matrix Compiler2: 106.83 KB object code size  30.6/271.4/[29.6]
+
