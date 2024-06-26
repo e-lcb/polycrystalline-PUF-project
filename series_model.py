@@ -10,7 +10,7 @@ import math
 
 path_here = os.path.dirname(os.path.realpath(__file__))
 
-params = {"ND": [1e16, 2e16],
+params = {"ND": [1e16, 2e16], #can be less than the number of GBs and it will repeat the list, or do [1e16] for constant doping
           "VA": (-0.9, 0.9),
           "NT": 4e11, #default 5e11
           "Area": 1.8e-9, #normal size: 1e-9, 3e-11, 4e-10
