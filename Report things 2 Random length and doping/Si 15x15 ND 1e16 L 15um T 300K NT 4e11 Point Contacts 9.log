@@ -1,0 +1,25 @@
+Circuit: * LUT_filenum = Test5, previous doping distibution = None, previous length distribution = None
+
+WARNING: Less than two connections to node NV2.  This node is used by V2.
+WARNING: Less than two connections to node NV3.  This node is used by V3.
+WARNING: Less than two connections to node NV4.  This node is used by V4.
+WARNING: Less than two connections to node NV5.  This node is used by V5.
+
+Date: Wed Apr 10 00:43:02 2024
+Total elapsed time: 4.449 seconds.
+
+tnom = 27
+temp = 27
+method = trap
+totiter = 467
+traniter = 0
+tranpoints = 0
+accept = 0
+rejected = 0
+matrix size = 653
+fillins = 3106
+solver = Normal
+Thread vector: 3937.2/1721.9[7] 0.0/0.0[0] 280.5/44.1[7] 17.4/11.6[3]  2592/500
+Matrix Compiler1:   20192 opcodes  283.4/[128.1]/162.6
+Matrix Compiler2: off  [24.3]/48.0/33.2
+
