@@ -9,6 +9,7 @@ To generate colour plots in griddata and show where  (sorry, it's a bit convolut
 Use colour_plot_divider.py to generate the voltage/current map, then use griddata_plot_not_adjusted_position.py with voltage divider data set to True. This saves all the points where it exceeds a defined limit (which can be obtained from the min/max voltage of a LUT).
 Then use colour_plot.py to regenerate voltage/current plot. griddata_plot_not_adjusted_position.py can then be used to generate the plot showing where the voltage limits are exceeded. (If you skip the divider step, it will still work but won't highlight if it those points are exceeded).
 NOTE: the position calculation does not return reliable results, it's mostly just a good way of visualising it in 2D.
+colour_plot.py can have some errors with non-point contacts, you can input the locations (as in array_model.py) to reduce that 
 
 energy_band_plot.py (plot for single boundary, and also used to calculate the voltage split data and write to csv)
 energy_band_plot_mult_boundaries.py (uses .raw sim file, assumes no voltage dropped across grain which could be added)
